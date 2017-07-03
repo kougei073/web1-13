@@ -27,7 +27,7 @@ update();
 
 
 function getFileName(){
-return window.location.href.split('/').pop();
+  return window.location.href.split('/').pop();
 }
 
 var filename = getFileName();
