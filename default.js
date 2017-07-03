@@ -29,7 +29,17 @@ document.cookie = s;
   return"";
   }
 
-
+var last_date = getCookie('lastDate');
+  if(last_date){
+  document.getElementById('cookie').textContent = '前回訪れた時間：' + last_date;
+  }else{
+  document.getElementById('cookie').textContent = 'はじめまして';
+  }
+  
+  var current_time = new Date();
+  setCookie('lastDate', current_time.toString(),7);
+  
+  
 var separate_time = function(time){
 var sec = time.getSeconds();
 var min = time.getMinutes();
