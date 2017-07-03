@@ -65,6 +65,7 @@ s += "; ";
 }
 
 document.cookie = s;
+}
   
   function setCookie(c_name){
   var st="";
