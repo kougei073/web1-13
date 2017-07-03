@@ -12,7 +12,7 @@ var update = function(){
 var now = new Date();
 var counter = separate_time(now);
 document.getElementById('countdown').textContent = 
-  counter[5] + 'nenn' +
+  counter[5] + '年' +
   counter[4] + '月' +
   counter[3] + '日' +
   counter[2] + '時' +
@@ -41,4 +41,11 @@ opt.selected = true;
 
 document.getElementById('form').select.onchange = function(){
   location.href = document.getElementById('form').select.value;
+}
+
+var thmubs = document.querySelectorAll('.thumb');
+for(idx in thmubs){
+thmubs[idx].onclick = function(){
+  document.getElementById("bigimg").src = 'img/' + this.dateset.image + '.jpg';
+}
 }
