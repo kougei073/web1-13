@@ -67,7 +67,7 @@ document.cookie = s;
       if(st!=-1){
       st=st+c_name.legth+1;
       ed=document.cookie.indexOf(";",st)
-       if(ed==-1)ed=document.cookie.legth;
+       if(ed==-1) ed=document.cookie.legth;
         return unescape(document.cookie.substring(st,ed));
       }
     }
